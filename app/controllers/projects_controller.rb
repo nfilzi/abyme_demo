@@ -9,6 +9,7 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    @users = User.all
     @project = Project.new
   end
 
@@ -42,13 +43,13 @@ class ProjectsController < ApplicationController
   	params.require(:project).permit(
       :title, :description,
       tasks_attributes: [
-        :id, 
-        :title, 
-        :description, 
-        :_destroy, 
+        :id,
+        :title,
+        :description,
+        :_destroy,
         comments_attributes: [
-          :id, 
-          :content, 
+          :id,
+          :content,
           :_destroy
         ]
       ],
