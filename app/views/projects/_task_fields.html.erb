@@ -21,7 +21,9 @@
         <%= f.association :user,
                     input_html: { class: 'text-4xl font-bold mb-4 w-full' },
                     label: false,
+                    # With abyme 0.2.4, this fails with a "undefined method `username' for ["Yes", true]:Array"
                     collection:   @users,
+                    # With abyme 0.2.4, this fails with a "Devise could not find the `Warden::Proxy` instance on your request environment."
                     selected:     current_user.id,
                     value_method: :id,
                     label_method: :username,
