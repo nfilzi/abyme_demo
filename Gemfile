@@ -26,7 +26,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'simple_form'
 gem "view_component", require: "view_component/engine"
 gem 'font-awesome-sass', '~> 5.13.0'
-gem 'abyme'
+
+gem 'abyme', git: "git://github.com/nfilzi/abyme.git", branch: "fix/lost-controller-rendering-context"
+
 gem "devise", "~> 4.7"
 
 group :development, :test do

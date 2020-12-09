@@ -1,7 +1,13 @@
+GIT
+  remote: git://github.com/nfilzi/abyme.git
+  revision: 79ac949b33b7b13668f44973214ce0822e42b5fe
+  branch: fix/lost-controller-rendering-context
+  specs:
+    abyme (0.2.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    abyme (0.2.4)
     actioncable (6.0.3.3)
       actionpack (= 6.0.3.3)
       nio4r (~> 2.0)
@@ -259,7 +265,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  abyme
+  abyme!
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
